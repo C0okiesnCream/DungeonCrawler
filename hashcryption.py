@@ -15,7 +15,7 @@ def hash(password,hashlength):
 
     #hashing
     dummy = 0
-    while dummy2 < 10:
+    while dummy2 < 5:
         while dummy < len(hPass):
             if hPass[dummy] == "a":
                 hPass[dummy] = "lO"
