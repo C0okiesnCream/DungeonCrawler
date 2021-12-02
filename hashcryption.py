@@ -5,332 +5,379 @@ def hash(password,hashlength):
     hPass = []
     hPass2 = []
     hashedPassword = 0
-    dummy = 0
-    dummy2 = 0
-    dummy3 = 0
+    D = 0
+    D2 = 0
+    D3 = 0
 
-    while dummy < len(password):
-        hPass.append(password[dummy])
-        dummy += 1
+    while D < len(password):
+        hPass.append(password[D])
+        D += 1
 
     #hashing
-    dummy = 0
-    while dummy2 < 5:
-        while dummy < len(hPass):
-            if hPass[dummy] == "a":
-                hPass[dummy] = "lO"
-            elif hPass[dummy] == "b":
-                hPass[dummy] = "9oi"
-            elif hPass[dummy] == "c":
-                hPass[dummy] = "qr1"
-            elif hPass[dummy] == "d":
-                hPass[dummy] = "F0"
-            elif hPass[dummy] == "e":
-                hPass[dummy] = "91"
-            elif hPass[dummy] == "f":
-                hPass[dummy] = "K93"
-            elif hPass[dummy] == "g":
-                hPass[dummy] = "gdrH"
-            elif hPass[dummy] == "h":
-                hPass[dummy] = "uu"
-            elif hPass[dummy] == "i":
-                hPass[dummy] = "20B"
-            elif hPass[dummy] == "j":
-                hPass[dummy] = "Luts"
-            elif hPass[dummy] == "k":
-                hPass[dummy] = "JJU"
-            elif hPass[dummy] == "l":
-                hPass[dummy] = "0CK"
-            elif hPass[dummy] == "m":
-                hPass[dummy] = "P4"
-            elif hPass[dummy] == "n":
-                hPass[dummy] = "0"
-            elif hPass[dummy] == "o":
-                hPass[dummy] = "J8"
-            elif hPass[dummy] == "p":
-                hPass[dummy] = "CxZ"
-            elif hPass[dummy] == "q":
-                hPass[dummy] = "P8"
-            elif hPass[dummy] == "r":
-                hPass[dummy] = "981"
-            elif hPass[dummy] == "s":
-                hPass[dummy] = "pSm"
-            elif hPass[dummy] == "t":
-                hPass[dummy] = "n5"
-            elif hPass[dummy] == "u":
-                hPass[dummy] = "lL"
-            elif hPass[dummy] == "v":
-                hPass[dummy] = "V4"
-            elif hPass[dummy] == "w":
-                hPass[dummy] = "Gny"
-            elif hPass[dummy] == "x":
-                hPass[dummy] = "1"
-            elif hPass[dummy] == "y":
-                hPass[dummy] = "27"
-            elif hPass[dummy] == "z":
-                hPass[dummy] = "plK"
-            elif hPass[dummy] == "A":
-                hPass[dummy] = "76l"
-            elif hPass[dummy] == "B":
-                hPass[dummy] = "NlT"
-            elif hPass[dummy] == "C":
-                hPass[dummy] = "py"
-            elif hPass[dummy] == "D":
-                hPass[dummy] = "i"
-            elif hPass[dummy] == "E":
-                hPass[dummy] = "lU"
-            elif hPass[dummy] == "F":
-                hPass[dummy] = "O"
-            elif hPass[dummy] == "G":
-                hPass[dummy] = "61"
-            elif hPass[dummy] == "H":
-                hPass[dummy] = "I7"
-            elif hPass[dummy] == "I":
-                hPass[dummy] = "JJ"
-            elif hPass[dummy] == "J":
-                hPass[dummy] = "oqC"
-            elif hPass[dummy] == "K":
-                hPass[dummy] = "Ohm"
-            elif hPass[dummy] == "L":
-                hPass[dummy] = "df"
-            elif hPass[dummy] == "M":
-                hPass[dummy] = "pO"
-            elif hPass[dummy] == "N":
-                hPass[dummy] = "ZxSa"
-            elif hPass[dummy] == "O":
-                hPass[dummy] = "1L9"
-            elif hPass[dummy] == "P":
-                hPass[dummy] = "li1"
-            elif hPass[dummy] == "Q":
-                hPass[dummy] = "496"
-            elif hPass[dummy] == "R":
-                hPass[dummy] = "u"
-            elif hPass[dummy] == "S":
-                hPass[dummy] = "87"
-            elif hPass[dummy] == "T":
-                hPass[dummy] = "877"
-            elif hPass[dummy] == "U":
-                hPass[dummy] = "P9"
-            elif hPass[dummy] == "V":
-                hPass[dummy] = "lF"
-            elif hPass[dummy] == "W":
-                hPass[dummy] = "rR"
-            elif hPass[dummy] == "X":
-                hPass[dummy] = "xZ"
-            elif hPass[dummy] == "Y":
-                hPass[dummy] = "vRtg"
-            elif hPass[dummy] == "Z":
-                hPass[dummy] = "oOo"
-            elif hPass[dummy] == "0":
-                hPass[dummy] = "op"
-            elif hPass[dummy] == "1":
-                hPass[dummy] = "3rT"
-            elif hPass[dummy] == "2":
-                hPass[dummy] = "i"
-            elif hPass[dummy] == "3":
-                hPass[dummy] = "90"
-            elif hPass[dummy] == "4":
-                hPass[dummy] = "llo"
-            elif hPass[dummy] == "5":
-                hPass[dummy] = "rDJ"
-            elif hPass[dummy] == "6":
-                hPass[dummy] = "D3v11"
-            elif hPass[dummy] == "7":
-                hPass[dummy] = "aH"
-            elif hPass[dummy] == "8":
-                hPass[dummy] = "mbS"
-            elif hPass[dummy] == "9":
-                hPass[dummy] = "vsK"
-            elif hPass[dummy] == "!":
-                hPass[dummy] = "9i"
-            elif hPass[dummy] == "@":
-                hPass[dummy] = "ojG"
-            elif hPass[dummy] == "#":
-                hPass[dummy] = "0"
-            elif hPass[dummy] == "$":
-                hPass[dummy] = "klI"
-            elif hPass[dummy] == "%":
-                hPass[dummy] = "Pof"
-            elif hPass[dummy] == "?":
-                hPass[dummy] = "opNg"
+    D = 0
+    while D2 < 5:
+        while D < len(hPass):
+            if hPass[D] == "a":
+                hPass[D] = "lO"
+            elif hPass[D] == "b":
+                hPass[D] = "9oi"
+            elif hPass[D] == "c":
+                hPass[D] = "qr1"
+            elif hPass[D] == "d":
+                hPass[D] = "F0"
+            elif hPass[D] == "e":
+                hPass[D] = "91"
+            elif hPass[D] == "f":
+                hPass[D] = "K93"
+            elif hPass[D] == "g":
+                hPass[D] = "gdrH"
+            elif hPass[D] == "h":
+                hPass[D] = "uu"
+            elif hPass[D] == "i":
+                hPass[D] = "20B"
+            elif hPass[D] == "j":
+                hPass[D] = "Luts"
+            elif hPass[D] == "k":
+                hPass[D] = "JJU"
+            elif hPass[D] == "l":
+                hPass[D] = "0CK"
+            elif hPass[D] == "m":
+                hPass[D] = "P4"
+            elif hPass[D] == "n":
+                hPass[D] = "0"
+            elif hPass[D] == "o":
+                hPass[D] = "J8"
+            elif hPass[D] == "p":
+                hPass[D] = "CxZ"
+            elif hPass[D] == "q":
+                hPass[D] = "P8"
+            elif hPass[D] == "r":
+                hPass[D] = "981"
+            elif hPass[D] == "s":
+                hPass[D] = "pSm"
+            elif hPass[D] == "t":
+                hPass[D] = "n5"
+            elif hPass[D] == "u":
+                hPass[D] = "lL"
+            elif hPass[D] == "v":
+                hPass[D] = "V4"
+            elif hPass[D] == "w":
+                hPass[D] = "Gny"
+            elif hPass[D] == "x":
+                hPass[D] = "1"
+            elif hPass[D] == "y":
+                hPass[D] = "27"
+            elif hPass[D] == "z":
+                hPass[D] = "plK"
+            elif hPass[D] == "A":
+                hPass[D] = "76l"
+            elif hPass[D] == "B":
+                hPass[D] = "NlT"
+            elif hPass[D] == "C":
+                hPass[D] = "py"
+            elif hPass[D] == "D":
+                hPass[D] = "i"
+            elif hPass[D] == "E":
+                hPass[D] = "lU"
+            elif hPass[D] == "F":
+                hPass[D] = "O"
+            elif hPass[D] == "G":
+                hPass[D] = "61"
+            elif hPass[D] == "H":
+                hPass[D] = "I7"
+            elif hPass[D] == "I":
+                hPass[D] = "JJ"
+            elif hPass[D] == "J":
+                hPass[D] = "oqC"
+            elif hPass[D] == "K":
+                hPass[D] = "Ohm"
+            elif hPass[D] == "L":
+                hPass[D] = "df"
+            elif hPass[D] == "M":
+                hPass[D] = "pO"
+            elif hPass[D] == "N":
+                hPass[D] = "ZxSa"
+            elif hPass[D] == "O":
+                hPass[D] = "1L9"
+            elif hPass[D] == "P":
+                hPass[D] = "li1"
+            elif hPass[D] == "Q":
+                hPass[D] = "496"
+            elif hPass[D] == "R":
+                hPass[D] = "u"
+            elif hPass[D] == "S":
+                hPass[D] = "87"
+            elif hPass[D] == "T":
+                hPass[D] = "877"
+            elif hPass[D] == "U":
+                hPass[D] = "P9"
+            elif hPass[D] == "V":
+                hPass[D] = "lF"
+            elif hPass[D] == "W":
+                hPass[D] = "rR"
+            elif hPass[D] == "X":
+                hPass[D] = "xZ"
+            elif hPass[D] == "Y":
+                hPass[D] = "vRtg"
+            elif hPass[D] == "Z":
+                hPass[D] = "oOo"
+            elif hPass[D] == "0":
+                hPass[D] = "op"
+            elif hPass[D] == "1":
+                hPass[D] = "3rT"
+            elif hPass[D] == "2":
+                hPass[D] = "i"
+            elif hPass[D] == "3":
+                hPass[D] = "90"
+            elif hPass[D] == "4":
+                hPass[D] = "llo"
+            elif hPass[D] == "5":
+                hPass[D] = "rDJ"
+            elif hPass[D] == "6":
+                hPass[D] = "D3v11"
+            elif hPass[D] == "7":
+                hPass[D] = "aH"
+            elif hPass[D] == "8":
+                hPass[D] = "mbS"
+            elif hPass[D] == "9":
+                hPass[D] = "vsK"
+            elif hPass[D] == "!":
+                hPass[D] = "9i"
+            elif hPass[D] == "@":
+                hPass[D] = "ojG"
+            elif hPass[D] == "#":
+                hPass[D] = "0"
+            elif hPass[D] == "$":
+                hPass[D] = "klI"
+            elif hPass[D] == "%":
+                hPass[D] = "Pof"
+            elif hPass[D] == "?":
+                hPass[D] = "opNg"
             else:
-                hPass[dummy] = "lrt"
-            dummy += 1
-        dummy3 = ""
-        hPass2 = (dummy3.join(hPass))
-        while dummy < len(hPass2):
-            hPass.append(hPass2[dummy])
-            dummy += 1
-        dummy2 += 1
+                hPass[D] = "lrt"
+            D += 1
+        D3 = ""
+        hPass2 = (D3.join(hPass))
+        while D < len(hPass2):
+            hPass.append(hPass2[D])
+            D += 1
+        D2 += 1
     #putting characters from the back onto the front 
-    dummy = 1
-    while dummy < 11:
-        hPass.insert(0,hPass[-dummy])
-        dummy += 1
+    D = 1
+    while D < 11:
+        hPass.insert(0,hPass[-D])
+        D += 1
 
     #turning array into string
-    dummy = ""
-    hashedPassword = (dummy.join(hPass))
+    D = ""
+    hashedPassword = (D.join(hPass))
     hashedPassword = hashedPassword[:hashlength]
     return(hashedPassword)
 
 #encryption
-def encrypt(message):
-    dummy = 0
-    dummy2 = []
+def encrypt(message,keySpacer):
+    import random
+    D = 0
+    D2 = []
+    D3 = 0
+    D4 = []
+    D5 = 0
+    D6 = 0
     encryptedM = 0
+    key = 0
+    messLength = len(message)
 
-    while dummy < len(message):
-        dummy2.append(message[dummy])
-        dummy += 1
-    message = dummy2
+    while D < len(message):
+        D2.append(message[D])
+        D += 1
+    message = D2
 
-    dummy2 = 0    
-    dummy = 0
-    while dummy < len(message):
-        if message[dummy] == "a":
-            message[dummy] = "08"
-        elif message[dummy] == "b":
-            message[dummy] = "97"
-        elif message[dummy] == "c":
-            message[dummy] = "85"
-        elif message[dummy] == "d":
-            message[dummy] = "45"
-        elif message[dummy] == "e":
-            message[dummy] = "32"
-        elif message[dummy] == "f":
-            message[dummy] = "06"
-        elif message[dummy] == "g":
-            message[dummy] = "88"
-        elif message[dummy] == "h":
-            message[dummy] = "27"
-        elif message[dummy] == "i":
-            message[dummy] = "34"
-        elif message[dummy] == "j":
-            message[dummy] = "76"
-        elif message[dummy] == "k":
-            message[dummy] = "43"
-        elif message[dummy] == "l":
-            message[dummy] = "11"
-        elif message[dummy] == "m":
-            message[dummy] = "20"
-        elif message[dummy] == "n":
-            message[dummy] = "01"
-        elif message[dummy] == "o":
-            message[dummy] = "83"
-        elif message[dummy] == "p":
-            message[dummy] = "90"
-        elif message[dummy] == "q":
-            message[dummy] = "51"
-        elif message[dummy] == "r":
-            message[dummy] = "33"
-        elif message[dummy] == "s":
-            message[dummy] = "98"
-        elif message[dummy] == "t":
-            message[dummy] = "57"
-        elif message[dummy] == "u":
-            message[dummy] = "75"
-        elif message[dummy] == "v":
-            message[dummy] = "77"
-        elif message[dummy] == "w":
-            message[dummy] = "44"
-        elif message[dummy] == "x":
-            message[dummy] = "48"
-        elif message[dummy] == "y":
-            message[dummy] = "32"
-        elif message[dummy] == "z":
-            message[dummy] = "21"
-        elif message[dummy] == "A":
-            message[dummy] = "04"
-        elif message[dummy] == "B":
-            message[dummy] = "65"
-        elif message[dummy] == "C":
-            message[dummy] = "64"
-        elif message[dummy] == "D":
-            message[dummy] = "63"
-        elif message[dummy] == "E":
-            message[dummy] = "72"
-        elif message[dummy] == "F":
-            message[dummy] = "13"
-        elif message[dummy] == "G":
-            message[dummy] = "56"
-        elif message[dummy] == "H":
-            message[dummy] = "39"
-        elif message[dummy] == "I":
-            message[dummy] = "29"
-        elif message[dummy] == "J":
-            message[dummy] = "42"
-        elif message[dummy] == "K":
-            message[dummy] = "86"
-        elif message[dummy] == "L":
-            message[dummy] = "54"
-        elif message[dummy] == "M":
-            message[dummy] = "14"
-        elif message[dummy] == "N":
-            message[dummy] = "12"
-        elif message[dummy] == "O":
-            message[dummy] = "69"
-        elif message[dummy] == "P":
-            message[dummy] = "60"
-        elif message[dummy] == "Q":
-            message[dummy] = "04"
-        elif message[dummy] == "R":
-            message[dummy] = "82"
-        elif message[dummy] == "S":
-            message[dummy] = "37"
-        elif message[dummy] == "T":
-            message[dummy] = "68"
-        elif message[dummy] == "U":
-            message[dummy] = "19"
-        elif message[dummy] == "V":
-            message[dummy] = "18"
-        elif message[dummy] == "W":
-            message[dummy] = "17"
-        elif message[dummy] == "X":
-            message[dummy] = "16"
-        elif message[dummy] == "Y":
-            message[dummy] = "15"
-        elif message[dummy] == "Z":
-            message[dummy] = "53"
-        elif message[dummy] == "0":
-            message[dummy] = "57"
-        elif message[dummy] == "1":
-            message[dummy] = "51"
-        elif message[dummy] == "2":
-            message[dummy] = "10"
-        elif message[dummy] == "3":
-            message[dummy] = "40"
-        elif message[dummy] == "4":
-            message[dummy] = "49"
-        elif message[dummy] == "5":
-            message[dummy] = "58"
-        elif message[dummy] == "6":
-            message[dummy] = "21"
-        elif message[dummy] == "7":
-            message[dummy] = "20"
-        elif message[dummy] == "8":
-            message[dummy] = "40"
-        elif message[dummy] == "9":
-            message[dummy] = "78"
-        elif message[dummy] == "!":
-            message[dummy] = "32"
-        elif message[dummy] == "@":
-            message[dummy] = "08"
-        elif message[dummy] == "#":
-            message[dummy] = "09"
-        elif message[dummy] == "$":
-            message[dummy] = "89"
-        elif message[dummy] == "%":
-            message[dummy] = "39"
-        elif message[dummy] == "?":
-            message[dummy] = "71"
+    D2 = 0    
+    D = 0
+    32
+    while D < len(message):
+        if message[D] == "a":
+            message[D] = "01"
+        elif message[D] == "b":
+            message[D] = "02"
+        elif message[D] == "c":
+            message[D] = "03"
+        elif message[D] == "d":
+            message[D] = "04"
+        elif message[D] == "e":
+            message[D] = "05"
+        elif message[D] == "f":
+            message[D] = "06"
+        elif message[D] == "g":
+            message[D] = "07"
+        elif message[D] == "h":
+            message[D] = "08"
+        elif message[D] == "i":
+            message[D] = "09"
+        elif message[D] == "j":
+            message[D] = "10"
+        elif message[D] == "k":
+            message[D] = "11"
+        elif message[D] == "l":
+            message[D] = "12"
+        elif message[D] == "m":
+            message[D] = "13"
+        elif message[D] == "n":
+            message[D] = "14"
+        elif message[D] == "o":
+            message[D] = "15"
+        elif message[D] == "p":
+            message[D] = "16"
+        elif message[D] == "q":
+            message[D] = "17"
+        elif message[D] == "r":
+            message[D] = "18"
+        elif message[D] == "s":
+            message[D] = "19"
+        elif message[D] == "t":
+            message[D] = "20"
+        elif message[D] == "u":
+            message[D] = "21"
+        elif message[D] == "v":
+            message[D] = "22"
+        elif message[D] == "w":
+            message[D] = "23"
+        elif message[D] == "x":
+            message[D] = "24"
+        elif message[D] == "y":
+            message[D] = "25"
+        elif message[D] == "z":
+            message[D] = "26"
+        elif message[D] == "A":
+            message[D] = "27"
+        elif message[D] == "B":
+            message[D] = "28"
+        elif message[D] == "C":
+            message[D] = "29"
+        elif message[D] == "D":
+            message[D] = "30"
+        elif message[D] == "E":
+            message[D] = "31"
+        elif message[D] == "F":
+            message[D] = "32"
+        elif message[D] == "G":
+            message[D] = "33"
+        elif message[D] == "H":
+            message[D] = "34"
+        elif message[D] == "I":
+            message[D] = "35"
+        elif message[D] == "J":
+            message[D] = "36"
+        elif message[D] == "K":
+            message[D] = "37"
+        elif message[D] == "L":
+            message[D] = "38"
+        elif message[D] == "M":
+            message[D] = "39"
+        elif message[D] == "N":
+            message[D] = "40"
+        elif message[D] == "O":
+            message[D] = "41"
+        elif message[D] == "P":
+            message[D] = "42"
+        elif message[D] == "Q":
+            message[D] = "43"
+        elif message[D] == "R":
+            message[D] = "44"
+        elif message[D] == "S":
+            message[D] = "45"
+        elif message[D] == "T":
+            message[D] = "46"
+        elif message[D] == "U":
+            message[D] = "47"
+        elif message[D] == "V":
+            message[D] = "48"
+        elif message[D] == "W":
+            message[D] = "49"
+        elif message[D] == "X":
+            message[D] = "50"
+        elif message[D] == "Y":
+            message[D] = "51"
+        elif message[D] == "Z":
+            message[D] = "52"
+        elif message[D] == "0":
+            message[D] = "53"
+        elif message[D] == "1":
+            message[D] = "54"
+        elif message[D] == "2":
+            message[D] = "55"
+        elif message[D] == "3":
+            message[D] = "56"
+        elif message[D] == "4":
+            message[D] = "57"
+        elif message[D] == "5":
+            message[D] = "58"
+        elif message[D] == "6":
+            message[D] = "59"
+        elif message[D] == "7":
+            message[D] = "60"
+        elif message[D] == "8":
+            message[D] = "61"
+        elif message[D] == "9":
+            message[D] = "62"
+        elif message[D] == "!":
+            message[D] = "63"
+        elif message[D] == "@":
+            message[D] = "64"
+        elif message[D] == "#":
+            message[D] = "65"
+        elif message[D] == "$":
+            message[D] = "67"
+        elif message[D] == "%":
+            message[D] = "68"
+        elif message[D] == "?":
+            message[D] = "69"
         else:
-            message[dummy] = "00"
-        dummy += 1
-    print(message)
-    dummy2 = ""
-    encryptedM = (dummy2.join(message))
-    return(encryptedM)
+            message[D] = "00"
+        D += 1
+    D2 = ""
+    #turning array into string
+    encryptedM = (D2.join(message))
+    D2 = []
+    messLength *= 0.50
+    try:
+        messLength = round(messLength)
+    except:
+        pass
+    #creating first section of key
+    while D3 < messLength:
+        D = random.randint(1, 9)
+        D2.append(str(D))
+        D3 += 1
+    D = ""
+    D2 = (D.join(D2))
+    D2 = int(D2)
+    D3 = 0
+    encryptedM = int(encryptedM)
+    #adding operations to string
+    while D3 < 3:
+        D = random.randint(1, 3)
+        if D == 1:
+            D = "A"
+            D4.append(D)
+            encryptedM += D2
+        elif D == 2:
+            D = "S"
+            D4.append(D)
+            encryptedM -= D2
+        else:
+            D = "M"
+            D4.append(D)
+            encryptedM *= D2
+
+        D3 += 1
+    D = ""
+    D4 = (D.join(D4))
+    key = (str(D2) + keySpacer + str(D4) + keySpacer)
+    encryptedM = hex(encryptedM)
+    D5 = [key,encryptedM]
+            
+    return(D5)
     
 #decryption
 def decrept(message):
