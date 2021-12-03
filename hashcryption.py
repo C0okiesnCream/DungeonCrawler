@@ -204,23 +204,23 @@ def encrypt(message,keySpacer):
         32
         while D < len(message):
             if message[D] == "a":
-                message[D] = "01"
+                message[D] = "91"
             elif message[D] == "b":
-                message[D] = "02"
+                message[D] = "92"
             elif message[D] == "c":
-                message[D] = "03"
+                message[D] = "93"
             elif message[D] == "d":
-                message[D] = "04"
+                message[D] = "94"
             elif message[D] == "e":
-                message[D] = "05"
+                message[D] = "95"
             elif message[D] == "f":
-                message[D] = "06"
+                message[D] = "96"
             elif message[D] == "g":
-                message[D] = "07"
+                message[D] = "97"
             elif message[D] == "h":
-                message[D] = "08"
+                message[D] = "98"
             elif message[D] == "i":
-                message[D] = "09"
+                message[D] = "99"
             elif message[D] == "j":
                 message[D] = "10"
             elif message[D] == "k":
@@ -343,6 +343,7 @@ def encrypt(message,keySpacer):
                 message[D] = "00"
             D += 1
         D2 = ""
+        (message)
         #turning array into string
         encryptedM = (D2.join(message))
         D2 = []
@@ -375,20 +376,194 @@ def encrypt(message,keySpacer):
                 D = "S"
                 D4.append(D)
                 encryptedM -= D2
-            else:
-                D = "M"
-                D4.append(D)
-                encryptedM *= D2
-
             D3 += 1
+        (encryptedM)
         D = ""
         D4 = (D.join(D4))
         key = (str(D2) + keySpacer + str(D4) + keySpacer)
         encryptedM = hex(encryptedM)
-        D5 = [key,encryptedM]
+        D5 = [encryptedM, key]
             
         return(D5)
     
 #decryption
-def decrept(message):
-    pass
+def decrept(message,key):
+    message = int(message, 16)
+    spacer = key[-1]
+    number = 0
+    operations = 0
+    midspacer = 0
+    D = 0
+    D2 = 0
+
+    (message)
+    while D != spacer:
+        D = key[midspacer]
+        midspacer += 1
+    midspacer -= 1
+    number = key[:midspacer]
+    D = 0
+    operations = key[(midspacer + 1):-1]
+    number = int(number)
+    while D < 2:
+        if operations[D] == "A":
+            message -= number
+        elif operations[D] == "S":
+            message += number
+        D += 1
+    D = 0
+    message = int(message)
+    message = str(message)
+    D2 = []
+    while D < len(message):
+        D2.append(message[D:D+2])
+        D += 2
+    message = D2
+    D = 0
+    while D < len(message):
+        if message[D] == "91":
+            message[D] = "a"
+        elif message[D] == "92":
+            message[D] = "b"
+        elif message[D] == "93":
+            message[D] = "c"
+        elif message[D] == "94":
+            message[D] = "d"
+        elif message[D] == "95":
+            message[D] = "e"
+        elif message[D] == "96":
+            message[D] = "f"
+        elif message[D] == "97":
+            message[D] = "g"
+        elif message[D] == "98":
+            message[D] = "h"
+        elif message[D] == "99":
+            message[D] = "i"
+        elif message[D] == "10":
+            message[D] = "j"
+        elif message[D] == "11":
+            message[D] = "k"
+        elif message[D] == "12":
+            message[D] = "l"
+        elif message[D] == "13":
+            message[D] = "m"
+        elif message[D] == "14":
+            message[D] = "n"
+        elif message[D] == "15":
+            message[D] = "o"
+        elif message[D] == "16":
+            message[D] = "p"
+        elif message[D] == "17":
+            message[D] = "q"
+        elif message[D] == "18":
+            message[D] = "r"
+        elif message[D] == "19":
+            message[D] = "s"
+        elif message[D] == "20":
+            message[D] = "t"
+        elif message[D] == "21":
+            message[D] = "u"
+        elif message[D] == "22":
+            message[D] = "v"
+        elif message[D] == "23":
+            message[D] = "w"
+        elif message[D] == "24":
+            message[D] = "x"
+        elif message[D] == "25":
+            message[D] = "y"
+        elif message[D] == "26":
+            message[D] = "z"
+        elif message[D] == "27":
+            message[D] = "A"
+        elif message[D] == "28":
+            message[D] = "B"
+        elif message[D] == "29":
+            message[D] = "C"
+        elif message[D] == "30":
+            message[D] = "D"
+        elif message[D] == "31":
+            message[D] = "E"
+        elif message[D] == "32":
+            message[D] = "F"
+        elif message[D] == "33":
+            message[D] = "G"
+        elif message[D] == "34":
+            message[D] = "H"
+        elif message[D] == "35":
+            message[D] = "I"
+        elif message[D] == "36":
+            message[D] = "J"
+        elif message[D] == "37":
+            message[D] = "K"
+        elif message[D] == "38":
+            message[D] = "L"
+        elif message[D] == "39":
+            message[D] = "M"
+        elif message[D] == "40":
+            message[D] = "N"
+        elif message[D] == "41":
+            message[D] = "O"
+        elif message[D] == "42":
+            message[D] = "P"
+        elif message[D] == "43":
+            message[D] = "Q"
+        elif message[D] == "44":
+            message[D] = "R"
+        elif message[D] == "45":
+            message[D] = "S"
+        elif message[D] == "46":
+            message[D] = "T"
+        elif message[D] == "47":
+            message[D] = "U"
+        elif message[D] == "48":
+            message[D] = "V"
+        elif message[D] == "49":
+            message[D] = "W"
+        elif message[D] == "50":
+            message[D] = "X"
+        elif message[D] == "51":
+            message[D] = "Y"
+        elif message[D] == "52":
+            message[D] = "Z"
+        elif message[D] == "53":
+            message[D] = "0"
+        elif message[D] == "54":
+            message[D] = "1"
+        elif message[D] == "55":
+            message[D] = "2"
+        elif message[D] == "56":
+            message[D] = "3"
+        elif message[D] == "57":
+            message[D] = "4"
+        elif message[D] == "58":
+            message[D] = "5"
+        elif message[D] == "59":
+            message[D] = "6"
+        elif message[D] == "60":
+            message[D] = "7"
+        elif message[D] == "61":
+            message[D] = "8"
+        elif message[D] == "62":
+            message[D] = "9"
+        elif message[D] == "63":
+            message[D] = "!"
+        elif message[D] == "64":
+            message[D] = "@"
+        elif message[D] == "65":
+            message[D] = "#"
+        elif message[D] == "66":
+            message[D] = "$"
+        elif message[D] == "67":
+            message[D] = "%"
+        elif message[D] == "68":
+            message[D] = "?"
+        elif message[D] == "69":
+            message[D] = ""
+        else:
+            message[D] = " "
+        D += 1
+
+    D = ""
+    message = (D.join(message))
+
+    return message
